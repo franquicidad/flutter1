@@ -13,32 +13,32 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: CircleContainer(
-          width: 200,
+            width: 200,
             height: 200,
             child: Container(
               alignment: Alignment.centerRight,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SvgPicture.asset("assets/icons/food.svg",width: 40,height: 40,alignment: Alignment.center),
-
+                  SvgPicture.asset("assets/icons/food.svg",
+                      width: 40, height: 40, alignment: Alignment.center),
                   Text(
-          "Flutter",
-          textAlign: TextAlign.center,
-          style:
-          TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w700,
-                    shadows: [
-                      Shadow(
-                          color: Colors.black54, blurRadius: 10, offset: Offset(2, 2))
-                    ]
-          ),
-        ),
+                    "Flutter",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        shadows: [
+                          Shadow(
+                              color: Colors.black54,
+                              blurRadius: 10,
+                              offset: Offset(2, 2))
+                        ]),
+                  ),
                 ],
               ),
-            )
-        ),
+            )),
       ),
     );
     throw UnimplementedError();
